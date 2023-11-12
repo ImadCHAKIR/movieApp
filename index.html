@@ -25,6 +25,11 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     ></script>
+    <script>
+      if (window.location.hostname.startsWith('www.')) {
+          window.location.href = 'https://' + window.location.hostname.substring(4) + window.location.pathname + window.location.search;
+      }
+    </script>
     <script src="./landing-page.js"></script>
     <!-- Font  -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
